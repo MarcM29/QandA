@@ -5,7 +5,8 @@ This project allows anyone (guests) to enter the site and view computer science 
 This project is not hosted on a webserver but works locally and stores users logins, questions and answers in a database which is accessed via SQL statements.
 <br /><br />
 # Under the /demoIMGS directory you will find some images displaying some of the functionality of the app <br />
--Such as displaying the list of practice problems users have created
--Inputting a search query in the search tab
--Result of the search query
--Viewing, editting and deleting practice problems
+-Such as displaying the list of practice problems users have created <br />
+-Inputting a search query in the search tab <br />
+-Result of the search query <br />
+-Viewing, editting and deleting practice problems <br />
+ 
