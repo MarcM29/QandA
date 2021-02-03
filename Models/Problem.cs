@@ -10,9 +10,10 @@ namespace StudyWebApp.Models
         public int Id { get; set; }
         public string ProblemQuestion { get; set; }
         public string ProblemAnswer { get; set; }
+        public string UsersName { get; set; }
+
         public Problem()
         {
-
         }
 
     }

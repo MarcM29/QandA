@@ -56,8 +56,8 @@ namespace StudyWebApp.Controllers
             return View(problem);
         }
 
-        // GET: Problems/Create
         [Authorize]
+        // GET: Problems/Create
         public IActionResult Create()
         {
             return View();
@@ -69,7 +69,7 @@ namespace StudyWebApp.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ProblemQuestion,ProblemAnswer")] Problem problem)
+        public async Task<IActionResult> Create([Bind("Id,ProblemQuestion,ProblemAnswer,UsersName")] Problem problem)
         {
             if (ModelState.IsValid)
             {
@@ -80,8 +80,8 @@ namespace StudyWebApp.Controllers
             return View(problem);
         }
 
-        // GET: Problems/Edit/5
         [Authorize]
+        // GET: Problems/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -103,7 +103,7 @@ namespace StudyWebApp.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ProblemQuestion,ProblemAnswer")] Problem problem)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ProblemQuestion,ProblemAnswer,UsersName")] Problem problem)
         {
             if (id != problem.Id)
             {
@@ -133,8 +133,8 @@ namespace StudyWebApp.Controllers
             return View(problem);
         }
 
-        // GET: Problems/Delete/5
         [Authorize]
+        // GET: Problems/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
